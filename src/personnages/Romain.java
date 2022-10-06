@@ -14,10 +14,28 @@ public class Romain {
 	}
 	
 	public void parler(String texte) {
-		System.out.println();
+		System.out.println(texte);
 	}
 	
-	private void prendreParole() {
-		
+	private String prendreParole() {
+		return "Le romain" + nom +" : ";
+	}
+	
+	public void recevoirCoups(int forceCoup) {
+		force -= forceCoup;
+		if (force >0) {
+			parler("Aïe");
+		}
+		else {
+			parler("J'abandonne...");
+		}
+	}
+	
+	public static void main(String[] args) {
+		Romain maximus = new Romain("Maximus", 5);
+		System.out.println(maximus.nom);
+		maximus.prendreParole();
+		maximus.parler("Non s'il vous plaît.");
+		maximus.recevoirCoups(4);
 	}
 }
