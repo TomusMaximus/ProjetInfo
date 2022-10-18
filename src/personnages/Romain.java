@@ -13,6 +13,10 @@ public class Romain {
 		return nom;
 	}
 	
+	public int getforce() {
+		return force;
+	}
+	
 	public void parler(String texte) {
 		System.out.println(texte);
 	}
@@ -24,7 +28,7 @@ public class Romain {
 	public void recevoirCoups(int forceCoup) {
 		force -= forceCoup;
 		if (force >0) {
-			parler("Aïe");
+			parler("AÃ¯e");
 		}
 		else {
 			parler("J'abandonne...");
@@ -35,7 +39,7 @@ public class Romain {
 		Romain maximus = new Romain("Maximus", 5);
 		System.out.println(maximus.nom);
 		maximus.prendreParole();
-		maximus.parler("Non s'il vous plaît.");
+		maximus.parler("Non s'il vous plaÃ®t.");
 		maximus.recevoirCoups(4);
 	}
 }
