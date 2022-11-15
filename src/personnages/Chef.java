@@ -24,5 +24,6 @@ public class Chef {
 	public void frapper(Romain romain) {
 		System.out.println(nom + "envoie un grand coupp dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force/3);
+		romain.recevoirCoup(force/3);
 	}
 }

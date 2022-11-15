@@ -11,5 +11,7 @@ public class Musee {
 	public int getNbTrophee() {
 		return nbTrophee;
 	}
+
+
 	
 }

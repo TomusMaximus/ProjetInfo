@@ -36,8 +36,8 @@ public class Gaulois {
 //	}
 	
 //	public void frapper(Romain romain) {
-//		System.out.println(nom + "envoie un grand coup dans la mâchoire de " + romain.getNom());
-//		romain.recevoirCoups((force/3)*effetPotion);
+//		System.out.println(nom + "envoie un grand coup dans la machoire de " + romain.getNom());
+//		romain.recevoirCoup((force/3)*effetPotion);
 //	}
 	
 	public void frapper(Romain romain) {
@@ -46,6 +46,8 @@ public class Gaulois {
 		for (int i = 0; trophees != null && i < trophees.length; i++, nbtrophees++) {
 			this.trophees[nbtrophees] = trophees[i];
 		}
+		System.out.println(nom + "envoie un grand coup dans la mâchoire de " + romain.getNom());
+		romain.recevoirCoup((force/3)*effetPotion);
 	}
 
 	@Override
@@ -65,7 +67,7 @@ public class Gaulois {
 		parler("Je donne au musee tous mes trophees :");
 		for (int i=0; i < trophees.length; i++) {
 //			musee.donnerTrophees() +=1;
-		System.out.println("\n -"+ trophees[i]);	
+			System.out.println("\n -"+ trophees[i]);	
 		}
 	}
 	
